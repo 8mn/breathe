@@ -1,0 +1,49 @@
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+
+.action {
+    font-size: 8rem;
+    /* font-weight: 100; */
+    font-variation-settings: 'wght' 300;
+    animation: breathe 10s ease-in-out infinite;
+    text-transform: uppercase;
+    color: #f5ce79;
+
+}
+
+@keyframes breathe {
+    0% {
+        /* scale: 1; */
+        transform: scale(1);
+        font-variation-settings: "wght" 900;
+        /* font-variation-settings: "wdth" 115; */
+        
+    }
+    /* 20% {
+        transform: scale(1);
+        font-variation-settings: "wght" 900;
+    } */
+    40% {
+        transform: scale(1.7);
+        /* scale: 1.5; */
+        letter-spacing: 50px;
+        font-variation-settings: "wght" 300;
+    }
+    80% {
+        transform: scale(1);
+        /* scale: 1; */
+        /* letter-spacing: 0px; */
+        font-variation-settings: "wght" 900;
+    }
+    100% {
+        /* scale: 1; */
+        transform: scale(1);
+        font-variation-settings: "wght" 900;
+    }
+}
